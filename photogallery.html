@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles2.css" rel="stylesheet">
+    <title>Travel Club</title>
+</head>
+
+<body>
+    <div>
+        <img id="head-image" src="img/view.jpg">
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <h2 class="head-title">TRAVEL COMMUNITY</h2><br>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#"><img src="img/logo.jpg" height="30" width="41"></a> -->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span><b> HOME</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> <b>ABOUT OUR COMMUNITY</b></a></li>    <!--Burada # yerine aboutus.html'e yönlendirdik-->
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> <b>TRAVEL PLANS</b></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"onClick="window.location.reload()"><span class="fa fa-photo fa-lg"></span> <b>PHOTO GALLERY</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-video-camera fa-lg"></span> <b>VIDEOS</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> <b>CONTACT US</b></a></li>
+                </ul>
+                <span class="navbar-text">
+                    <button id="openLoginModal">
+                        <span class="fa fa-sign-in "></span> LOGIN
+                    </button>
+                </span>
+                <span class="navbar-text">
+                    <a id="openSignupModal">
+                        <span class="fa fa-join"></span> SIGN UP
+                    </a>
+                </span>
+                <span class="navbar-text">
+                    <a id="faq">
+                        <span class="fa fa-info"></span> FAQ
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Login
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container" id="gallery-grid-1">
+        <button class="btn btn-default hBack" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+        <h3 id="gallery-title">Ephesus Ancient City</h3>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_1.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_1.2.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_2.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_2.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_3.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_3.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_4.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_4.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_5.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_5.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_6.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_6.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_7.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_7.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-1" data-large-src="img/photo_gallery/efes/efes_8.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/efes/efes_8.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galleryModal-1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center mb-0"></h3>
+                    <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                      <span aria-hidden="true">&#xD7;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center bg-alt">
+                    <img src="//placehold.it/1200x700/222?text=..." id="galleryImage-1" class="loaded-image mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="gallery-grid-2">
+        <button class="btn btn-default hBack" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+        <h3 id="gallery-title">Cappadocia</h3>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_1.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_1.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_2.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_2.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_3.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_3.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_4.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_4.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_5.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_5.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_6.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_6.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_7.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_7.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-2" data-large-src="img/photo_gallery/cappadocia/cappadocia_8.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/cappadocia/cappadocia_8.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galleryModal-2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center mb-0"></h3>
+                    <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                      <span aria-hidden="true">&#xD7;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center bg-alt">
+                    <img src="//placehold.it/1200x700/222?text=..." id="galleryImage-2" class="loaded-image mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="gallery-grid-3">
+        <button class="btn btn-default hBack" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+        <h3 id="gallery-title">Mount Nemrud</h3>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_1.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_1.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_2.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_2.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_3.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_3.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_4.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_4.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_5.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_5.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_6.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_6.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_7.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_7.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-3" data-large-src="img/photo_gallery/nemrut/nemrut_8.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/nemrut/nemrut_8.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galleryModal-3" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center mb-0"></h3>
+                    <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                      <span aria-hidden="true">&#xD7;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center bg-alt">
+                    <img src="//placehold.it/1200x700/222?text=..." id="galleryImage-3" class="loaded-image mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="gallery-grid-4">
+        <button class="btn btn-default hBack" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+        <h3 id="gallery-title">Fethiye Dead Sea</h3>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_1.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_1.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_2.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_2.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_3.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_3.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_4.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_4.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_5.jpeg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_5.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_6.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_6.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_7.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_7.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-4" data-large-src="img/photo_gallery/fethiye/fethiye_8.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/fethiye/fethiye_8.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galleryModal-4" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center mb-0"></h3>
+                    <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                      <span aria-hidden="true">&#xD7;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center bg-alt">
+                    <img src="//placehold.it/1200x700/222?text=..." id="galleryImage-4" class="loaded-image mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="gallery-grid-5">
+        <button class="btn btn-default hBack" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+        <h3 id="gallery-title">Aspendos</h3>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_1.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_1.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_2.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_2.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_3.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_3.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_4.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_4.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_5.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_5.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_6.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_6.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_7.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_7.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-5" data-large-src="img/photo_gallery/aspendos/aspendos_8.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/aspendos/aspendos_8.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galleryModal-5" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center mb-0"></h3>
+                    <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                      <span aria-hidden="true">&#xD7;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center bg-alt">
+                    <img src="//placehold.it/1200x700/222?text=..." id="galleryImage-5" class="loaded-image mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="gallery-grid-6">
+        <button class="btn btn-default hBack" type="button"><i class="fa fa-arrow-left"></i> Back</button>
+        <h3 id="gallery-title">Sumela Monastery</h3>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_1.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_1.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_2.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_2.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_3.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_3.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_4.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_4.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_5.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_5.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_6.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_6.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_7.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_7.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-6 py-2">
+                <a href="#galleryModal-6" data-large-src="img/photo_gallery/sumela/sumela_8.jpg" data-toggle="modal">
+                    <img src="img/photo_gallery/sumela/sumela_8.1.jpg" class="img-fluid img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galleryModal-6" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center mb-0"></h3>
+                    <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                      <span aria-hidden="true">&#xD7;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0 text-center bg-alt">
+                    <img src="//placehold.it/1200x700/222?text=..." id="galleryImage-6" class="loaded-image mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <ul class="gallery_box" id="filter-box">
+        <li id="img-button">
+            <a href="#0"><img id="img-gallery" src="img/antik_kent_2.jpg">
+            <div class="box_data">
+                <span>Ephesus Ancient City</span>
+            </div></a>
+        </li>
+        <li id="img-button-1">
+            <a href="#0"><img id="img-gallery" src="img/cappadocia_2.jpg">
+            <div class="box_data">
+                <span>Cappadocia</span>
+            </div></a>
+        </li>
+        <li id="img-button-2">
+            <a href="#0"><img id="img-gallery" src="img/mount_nemrut_2.jpg">
+            <div class="box_data">
+                <span>Mount Nemrut</span>
+            </div></a>
+        </li>
+        <li id="img-button-3">
+            <a href="#0"><img id="img-gallery"src="img/dead_sea_2.jpg">
+            <div class="box_data">
+                <span>Fethiye Dead Sea</span>
+            </div></a>
+        </li>
+        <li id="img-button-4">
+            <a href="#0"><img id="img-gallery" src="img/aspendos.jpg">
+            <div class="box_data">
+                <span>Aspendos</span>
+            </div></a>
+        </li>
+        <li id="img-button-5">
+            <a href="#0"><img id="img-gallery" src="img/sumela_monastery.jpg">
+            <div class="box_data">
+                <span>Sumela Monastery</span>
+            </div></a>
+        </li>
+        
+    </ul>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li> <!--Buradaki # simgesi yerine de ./aboutus.html yazdık-->
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              TEXT<br>
+		              TEXT<br>
+		              TURKEY<br>
+		              <i class="fa fa-phone fa-lg"></i>: +90 312 123 5678<br> <!--Normalde Tel. yazıyordu onun yerine simge kullandık alttakiler için de aynısını yaptık.-->
+		              <i class="fa fa-fax fa-lg"></i>: +90 312 123 5678<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:travelcommunity@ybu.edu.tr">travelcommunity@ybu.edu.tr</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2022 Travel Community</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

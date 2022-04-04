@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles2.css" rel="stylesheet">
+    <title>Travel Club</title>
+</head>
+
+<body id="home-page">
+
+    <div>
+        <img id="head-image" src="img/view.jpg">
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <h2 class="head-title">TRAVEL COMMUNITY</h2><br>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#"><img src="img/logo.jpg" height="30" width="41"></a> -->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span><b> HOME</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> <b>ABOUT OUR COMMUNITY</b></a></li>    <!--Burada # yerine aboutus.html'e yönlendirdik-->
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> <b>TRAVEL PLANS</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./photogallery.html"><span class="fa fa-photo fa-lg"></span> <b>PHOTO GALLERY</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-video-camera fa-lg"></span> <b>VIDEOS</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> <b>CONTACT US</b></a></li>
+                </ul>
+                <span class="navbar-text">
+                    <button id="openLoginModal">
+                        <span class="fa fa-sign-in "></span> LOGIN
+                    </button>
+                </span>
+                <span class="navbar-text">
+                    <a id="openSignupModal">
+                        <span class="fa fa-join"></span> SIGN UP
+                    </a>
+                </span>
+                <span class="navbar-text">
+                    <a id="faq">
+                        <span class="fa fa-info"></span> FAQ
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Login
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="briefinfomodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Reserve Table
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="numberofguest" class="col-md-2 col-form-label"><b>Number of Guest</b></label>
+                            <div class="col-md-5">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label font-weight-bold" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label font-weight-bold" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label font-weight-bold" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4">
+                                    <label class="form-check-label font-weight-bold" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5">
+                                    <label class="form-check-label font-weight-bold" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option6">
+                                    <label class="form-check-label font-weight-bold" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">                                
+                            <label for="dateandtime" class="col-12 col-md-2 col-form-label"><b>Section</b></label>
+                            <div class="btn-group btn-group-toggle col-md-4" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                        </div>
+                        </div>
+                        <div class="form-group row">                                
+                            <label for="dateandtime" class="col-12 col-md-2 col-form-label"><b>Date and Time</b></label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <div class="col-md-8">
+                                <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
+                                <a href="#" class="btn btn-primary">Reserve</a>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row" id="side_jum">
+        <header class="jumbotron col-sm-5" id="jum_1">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="row-12 row-sm-6">
+                        <h1>Travveling</h1>
+                        <p>
+                            The benefits of travel are endless and so we can't emphasize enough how important it is to travel. The benefits of traveling are not one-dimensional: it changes you not only psychologically but also physically. Having little time or no money is not a valid excuse to stay home. We have been traveling around the world on a budget as much as we can. Nowadays, it is easier than ever to find cheap flights and take time off. Just get out of your comfort zone and do it!
+                            <br>
+                            Soon, you'll find out that traveling affects YOU too. We strongly believe that travel brings positive change to someone's life. See below the main benefits of travel, grouped into four broad categories. Simply click on the one you want to learn more about or scroll down the page to find more.
+                            <br>
+                            Join our community and get inspired to travel!</p>
+                    </div>  
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <a role="button" class="btn btn-block nav-link btn btn-lg text-white" id="openReserveModal">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <header class="jumbotron col-sm-4" id="jum_2">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="row-12 row-sm-6">
+                        <h1>Life Style</h1>
+                        <p>
+                            I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.
+                    </div>  
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <a role="button" class="btn btn-block nav-link btn btn-lg text-white" id="openReserveModal">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <header class="jumbotron col-sm-6" id="jum_3">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="row-12">
+                        <h1>Soul</h1>
+                        <p>
+                            We understand the art of gathering and how to create an atmosphere that impacts people in places.
+
+                            Soul Traveller Tours is a provider of immersive, authentic group experience packages that bring people together to live in the moment and unite South Africans and internationals alike. It provides a space to cultivate positive citizenry and social cohesion through shared experiences that evoke feelings of togetherness and pride. It’s about a sensory-led experience that allows you to see, touch, feel and breath something greater than yourself. It develops an intuitive consciousness of the environment and spaces that you find yourself in. It isn’t just travel. It is a deepening of your soul.
+                    </div>  
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <a role="button" class="btn btn-block nav-link btn btn-lg text-white" id="openReserveModal">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <hr>
+
+    <h3 id="title-trip">Top Requested</h3>
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-2 col-md-3">
+            <h3>This Month's Favorite Travel Plan</h3>
+        </div>
+        <div class="col col-sm col-md">
+            <div class="media">
+                <img class="d-flex mr-2 img-thumbnail align-self-center"src="img/cappadocia.jpg" alt="buffet">
+                <div class="media-body">
+                    <h2>Cappadocia Trip<span class="badge badge-danger">NEW </span> <span class="badge badge-pill badge-secondary"></span></h2>
+                    <p class="d-none d-sm-block">Are you ready to a new journey. Join us and discovery this natural wonder with us. We are so excited to this trip, are you?</p>
+                </div>
+            </div>
+        </div>
+        <a role="button" class="btn btn-block nav-link btn btn-lg text-blue center" id="openReserveModal">
+            Learn More
+        </a>
+    </div>
+    <hr>
+    <hr>
+    <div>
+        <p id="wpsau">Some Places We Have Visited</p>
+    </div>
+    <div class="container" id="comments">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col-md-3">
+                <img src="img/cappadocia_1.jpg" class="rounded-circle" alt="cappadocia">
+                </div>
+                <h3 id="title-trip">
+                    Cappadocia
+                </h3>
+                <div class="text-center" id="comments-1">
+                "Discovery this natural wonder with us."
+                </div>
+            </div>
+
+            <div class="col-md-3" id="comments-img">
+                <div class="col-md-3">
+                <img src="img/dead_sea_1.jpg" class="rounded-circle" alt="dead_sea">
+                </div>
+                <h3 id="title-trip">
+                    Fethiye Dead Sea
+                </h3>
+                <div class="text-center" id="comments-1">
+                "Summer mood, on! Come on, grab your suitcase."
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col-md-3">
+                <img src="img/antik_kent_1.jpg" class="rounded-circle" alt="antik_kent">
+                </div>
+                <h3 id="title-trip">
+                    Efes Ancient City
+                </h3>
+                <div class="text-center" id="comments-1">
+                "This is of the Seven Wonders of the Ancient World."
+                </div>
+            </div>
+        </div>
+     </div>
+     <hr>
+     <h3 id="title-trip-2">Our Next Trip Plans</h3>
+     <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <h3>What A Historical Place.</h3>
+        </div>
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/antik_kent_1.jpg" alt="Uthappizza"> <!--mr-3 : margin right 3-->
+                <div class="media-body">
+                    <h2 class="mt-0">Ephesus Ancient City <span class="badge badge-danger">NEW </span> <span class="badge badge-pill badge-secondary">₺350</span></span></h2>    <!--mt-0 : margin top zero-->
+                    <p class="d-none d-sm-block">Ephesus (Turkish: Efes); was a city in ancient Greece on the coast of Ionia, 3 kilometres southwest of present-day Selçuk in İzmir Province, Turkey. It was built in the 10th century BC on the site of the former Arzawan capital by Attic and Ionian Greek colonists. During the Classical Greek era, it was one of twelve cities that were members of the Ionian League. The city came under the control of the Roman Republic in 129 BC.
+
+                        The city was famous in its day for the nearby Temple of Artemis (completed around 550 BC), which has been designated one of the Seven Wonders of the Ancient World. Its many monumental buildings included the Library of Celsus and a theatre capable of holding 24,000 spectators.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 col-md-3">
+            <h3>How did they make these statues? Were they aliens?</h3>
+        </div>
+        <div class="col col-sm col-md">
+            <div class="media">
+                <div class="media-body">
+                    <h2>Mount Nemrut <span class="badge badge-danger">NEW </span> <span class="badge badge-pill badge-secondary">₺500</span></h2>
+                    <p class="d-none d-sm-block">Mount Nemrut or Nemrud (Turkish: Nemrut Dağı) is a 2,134-metre-high (7,001 ft) mountain in southeastern Turkey, notable for the summit where a number of large statues are erected around what is assumed to be a royal tomb from the 1st century BC. It is one of the highest peaks in the east of the Taurus Mountains.</p>
+                </div>
+                <img class="d-flex mr-3 img-thumbnail align-self-center"src="img/mount_nemrut_1.jpg" alt="buffet">
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <h3>Woow! This place looks amazing!</h3>
+        </div>
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                src="img/dead_sea_1.jpg" alt="alberto">
+                <div class="media-body">
+                    <h2 class="mt-0">Fethiye Dead Sea <span class="badge badge-danger">NEW </span> <span class="badge badge-pill badge-secondary">₺1500</span></h2>
+                    <h4>Special Trip</h4>
+                    <p class="d-none d-sm-block">Ölüdeniz (literally Dead Sea, due to its calm waters even during storms; official translation name Blue Lagoon) is a small neighbourhood and beach resort in the Fethiye district of Muğla Province, on the Turquoise Coast of southwestern Turkey, at the conjunction point of the Aegean and Mediterranean sea. It is located 14 km to the south of Fethiye, near Mount Babadağ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+        <!-- Testimonial Start -->
+    <div class="container-xxl py-5" id="testimonial_1">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Testimonial</p>
+                <p id="wpsau">What Say Our Members!</p>
+            </div>
+            <hr>
+            <hr>
+            
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col">
+                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-item text-center">
+                                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/team-1.png">
+                                        <div class="testimonial-text rounded text-center p-4">
+                                            <p id="comment-2">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                                            <h5 class="mb-1">Tommy BRAIN</h5>
+                                            <span class="fst-italic">Instructer At Aybu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item text-center">
+                                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/team-2.png">
+                                        <div class="testimonial-text rounded text-center p-4">
+                                            <p id="comment-2">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                                            <h5 class="mb-1">Elizabeth Alexander</h5>
+                                            <span class="fst-italic">Student</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-item text-center">
+                                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/team-3.png">
+                                        <div class="testimonial-text rounded text-center p-4">
+                                            <p id="comment-2">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                                            <h5 class="mb-1">Marilyn Nicholson</h5>
+                                            <span class="fst-italic">Advisor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#mycarousel" data-slide-to="1"></li>
+                                <li data-target="#mycarousel" data-slide-to="2"></li>
+                            </ol>
+                            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                            <button class="btn btn-danger btn-sm" id="carouselButton">
+                                <span id="carousel-button-icon" class="fa fa-pause"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    <hr><hr>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li> <!--Buradaki # simgesi yerine de ./aboutus.html yazdık-->
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              TEXT<br>
+		              TEXT<br>
+		              TURKEY<br>
+		              <i class="fa fa-phone fa-lg"></i>: +90 312 123 5678<br> <!--Normalde Tel. yazıyordu onun yerine simge kullandık alttakiler için de aynısını yaptık.-->
+		              <i class="fa fa-fax fa-lg"></i>: +90 312 123 5678<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:travelcommunity@ybu.edu.tr">travelcommunity@ybu.edu.tr</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2022 Travel Community</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
