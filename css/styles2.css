@@ -315,3 +315,24 @@ h3[id="gallery-title"]{
     font-family: 'Comic Sans MS';
     text-decoration: underline;
 }
+
+
+/* for plugins */
+.eac-input-wrap
+{
+    display: block; 
+    width: 100%
+}
+.eac-sugg {  
+    color: #ccc;
+}
+
+
+.ui-datepicker {
+   font-family: 'Comic Sans MS';
+   background-color: #276b258e;
+}
+
+.ui-datepicker-calendar a.ui-state-active { background: #0096FF; }
+
+.ui-datepicker-calendar td.ui-datepicker-today a { background: #ADD8E6; }

@@ -108,6 +108,20 @@ $(document).ready(function(){
         $('#filter-box').show();
         $('#gallery-grid-1, #gallery-grid-2,#gallery-grid-3, #gallery-grid-4, #gallery-grid-5, #gallery-grid-6').hide();
     });
+    
+
+    // for plugins
+    $( "#date" ).datepicker({
+        inline: true
+    });
+
+    $(".dropdown").dropdown({
+  label: "Select an Item"
+});
+    NiceSelect.bind(document.getElementById("mySelect"), {
+  searchable: true
+}); 
+    $(".email").emailautocomplete();
 
 });
 
