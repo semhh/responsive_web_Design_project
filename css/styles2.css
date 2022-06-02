@@ -336,3 +336,8 @@ h3[id="gallery-title"]{
 .ui-datepicker-calendar a.ui-state-active { background: #0096FF; }
 
 .ui-datepicker-calendar td.ui-datepicker-today a { background: #ADD8E6; }
+
+
+p[id="lead_text"]{
+    margin-bottom: 150px;
+}
